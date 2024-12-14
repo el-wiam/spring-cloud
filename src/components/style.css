@@ -1,0 +1,155 @@
+/* General Landscape Layout */
+body {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5; /* Light beige background for body */
+    color: #2f2f2f; /* Dark text color for contrast */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Scrollbar Styling */
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #b9b9b9; /* Soft gray scrollbar */
+    border-radius: 5px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #fff; /* White background for container */
+  }
+  
+  h1 {
+    color: #3e3e3e; /* Darker beige for the title */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    width: 900px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e4d0b9; /* Beige color for card */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .card-header {
+    color: #3e3e3e; /* Darker text for contrast */
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .card-body {
+    padding: 20px;
+    background-color: #faf5e3; /* Light warm beige background */
+  }
+  
+  .table {
+    margin: auto;
+    width: 80%;
+    color: #2f2f2f; /* Dark text color for table */
+  }
+  
+  .table thead {
+    background-color: #d0b493; /* Soft beige with a hint of brown for header */
+  }
+  
+  .table tbody tr:nth-child(even) {
+    margin: auto;
+    background-color: #f9f1e2; /* Light beige for even rows */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #e2d5c8; /* Slightly darker beige for hover effect */
+    cursor: pointer;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #d8c3a5; /* Soft beige button */
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e7d1b7; /* Lighter beige on hover */
+  }
+  
+  .modal-content {
+    width: 500px; /* Set the modal width to 500px */
+    background-color: #f3eadd; /* Beige background for modal */
+    color: #3e3e3e; /* Darker text for modal content */
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute; /* Position it over the content */
+    top: 100%; /* Vertically center the modal */
+    left: 50%; /* Horizontally center the modal */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    z-index: 500; /* Ensure the modal is above other elements */
+  }
+  
+  .modal-header {
+    background-color: #f5e4d1; /* Soft beige header for modal */
+    color: #fff;
+  }
+  
+  .modal-footer button {
+    background-color: #d8c3a5; /* Beige footer button */
+  }
+  
+  input, select {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1e1c6; /* Very light beige for inputs */
+    color: #2f2f2f; /* Dark text for contrast */
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border: 2px solid #d0b493; /* Light brownish beige border on focus */
+  }
+  
+  /* Stack cards vertically */
+  .row {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card:nth-child(odd) {
+    transform: translateY(-10px);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 5px 0;
+    background-color: #e4d0b9; /* Beige background for list items */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
